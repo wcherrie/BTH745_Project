@@ -1,0 +1,25 @@
+.profileTitle{
+    text-align: center;
+    color: black;
+}
+
+.profileCard{
+    background: linear-gradient(to bottom, #70e1f5, #ffd194);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;
+}
+
+.passwordCard{
+    background: linear-gradient(to bottom, #dad299, #b0dab9);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;
+}
+
+.cartCard{
+    background: linear-gradient(to bottom, #ddd6f3 , #faaca8);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;
+}

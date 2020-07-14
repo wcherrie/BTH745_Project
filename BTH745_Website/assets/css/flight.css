@@ -1,0 +1,31 @@
+.navSide{
+    padding: 0.5rem 1rem;
+}
+
+.addCart{
+    padding-top: 100px;
+}
+
+.flightDiv{
+    padding-top: 40px;
+}
+
+.flightHeader{
+    background: linear-gradient(to right, #fc354c , #0abfbc);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;
+}
+
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: red;
+}
