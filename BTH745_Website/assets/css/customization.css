@@ -1,0 +1,14 @@
+.customizationHeader{
+    background: linear-gradient(to right, #b5ead7 , #ffb7b2);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
