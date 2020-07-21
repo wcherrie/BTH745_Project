@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
     <link rel="stylesheet" href="./assets/css/customization.css">
-    <link rel="stylesheet" href="./assets/css/now-ui-kit.css">
+    <link rel="stylesheet" href="./assets/css/now-ui-kit.css" type="text/css">
     <link rel="stylesheet" href="assets/css/nucleo-icons.css" type="text/css">
 </head>
 
@@ -65,15 +65,14 @@
     <div class="container my-4">
 
         <div class="row mt-1 pt-1">
-
-
             <form>
-                <div class="input-group border-0">
-                    <span for="flightCompany" class="input-group-text px-5">
+              
+                <div class="form-group">
+                    <label for="flightCompany">
                         Flight:
-                    </span>
+                    </label>
 
-                    <select name="flightCompany" id="flightCompany">
+                    <select class="form-control form-control-lg" name="flightCompany" id="flightCompany">
                         <option selected>
                             Air Canada
                         </option>
@@ -83,12 +82,12 @@
                     </select>
                 </div>
 
-                <div class="input-group border-0">
-                    <label for="flightType" class="input-group-text px-5">
+                <div class="form-group">
+                    <label for="flightType">
                         Flight Type:
                     </label>
 
-                    <select name="flightType" id="flightType">
+                    <select class="form-control form-control-lg" name="flightType">
                         <option value="two_way" selected>
                             2-way
                         </option>
@@ -101,22 +100,28 @@
                     </select>
                 </div>
     
-                <div class="input-group border-0">
-                    <input type="number" min="0" value = "1" size="5"/>
-                    <label class="input-group-text">Adult(s)</label>
+                <div class="form-group row">
+                    <div class="col">
+                        <input class="form-control form-control-lg" type="number" min="0" value = "1" size="5"/>
+                        <label>Adult(s)</label>
+                    </div>
                     
-                    <input type="number" min="0" value="0" size="5"/>
-                    <label class="input-group-text">Children</label>
+                    <div class="col">
+                        <input class="form-control form-control-lg" type="number" min="0" value="0" size="5"/>
+                        <label >Children</label>
+                    </div>
 
-                    <input type="number" min="0" value="0" size="5"/>
-                    <label class="input-group-text">Senior(s)</label>
+                    <div class="col">
+                                            <input class="form-control form-control-lg" type="number" min="0" value="0" size="5"/>
+                        <label>Senior(s)</label></div>
+
                 </div>
 
-                <div class="input-group border-0">
-                    <label class="input-group-text" for="departure">
+                <div class="form-group">
+                    <label for="departure">
                         Departure:
                     </label>
-                    <select name="departure" id="departure">
+                    <select class="form-control form-control-lg " name="departure" id="departure">
                         <option value="YYZ" selected>
                             Toronto Pearson International Airport
                         </option>
@@ -124,26 +129,26 @@
                             Billy Bishop Toronto City Airport
                         </option>
                     </select>
-                    <input type="date"/>
+                    <input type="text" class="form-control form-control-lg" id="departDate" class="datepicker" placeholder="05/03/1965">
                 </div>
 
-                <div class="input-group border-0">
-                    <label class="input-group-text" for="destination">
+                <div class="form-group">
+                    <label for="destination">
                         Destination:
                     </label>
-                    <select name="destination" id="destination">
+                    <select class="form-control form-control-lg" name="destination" id="destination">
                         <option value="YVR" selected>
                             Vancouver International Airport
                         </option>
                     </select>
-                    <input type="date"/>
+                    <input type="text" class="form-control form-control-lg" id="returnDate" class="datepicker" placeholder="05/03/1965">
                 </div>
 
-                <div class="input-group border-0">
-                    <label class="input-group-text" for="seatType">
+                <div class="form-group">
+                    <label for="seatType">
                         Seat Type:
                     </label>
-                    <select name="seatType" id="seatType">
+                    <select class="form-control form-control-lg" name="seatType" id="seatType">
                         <option value="economy" selected>
                             Economy
                         </option>
@@ -152,13 +157,34 @@
                         </option>
                     </select>
                 </div>
+           
 
-                <a class="btn btn-primary" href="#">Add Flight To Cart</a>
+                <a type="submit" class="btn btn-primary" href="cart.html">Add Flight To Cart</a>
             </form>
 
         </div>
 
     </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/parallax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#departDate').datepicker({
+      calendarWeeks: true,
+      autoclose: true,
+      todayHighlight: true
+    });
+    $('#returnDate').datepicker({
+      calendarWeeks: true,
+      autoclose: true,
+      todayHighlight: true
+    });
+  });
+</script>
 
 </html>
