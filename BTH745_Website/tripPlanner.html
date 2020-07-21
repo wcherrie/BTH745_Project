@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+  <link rel="stylesheet" href="./assets/css/now-ui-kit.css">
+  <link rel="stylesheet" href="assets/css/nucleo-icons.css" type="text/css">
+  <script src="./assets/js/browser.js"></script>
+  <script src="./assets/js/parallax.js"></script>
+  <title>Trip Planner</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark parallax sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="main.html">PRIMARY COLOR</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarPrimaryContent" style="">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbarPrimaryContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-1">
+            <a class="nav-link = align-items-center d-flex" href="discover.html">
+              <i class="fa fa-globe fa-fw fa-2x mr-2"></i> DISCOVER</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link = align-items-center d-flex" href="flight.html">
+              <i class="fa fa-plane fa-5 fa-fw fa-2x mr-2"></i> FLIGHTS</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link = align-items-center d-flex" href="hotel.html">
+              <i class="fa fa-bed fa-fw fa-2x mr-2"></i> HOTEL</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link align-items-center d-flex" href="aboutus.html">
+              <i class="fa fa-address-book fa-fw fa-2x  mr-2"></i>&nbsp;ABOUT US</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link = align-items-center d-flex" href="signin.html">
+              <i class="fa fa-user-circle-o fa-fw fa-2x mr-2"></i> &nbsp; SIGN UP / LOG IN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-6">
+          <h1>Trip Planner</h1>
+          <p class="mb-4">We help planning your trip step by step.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <ul class="nav nav-tabs">
+            <li class="nav-item text-center"> <a href="" class="nav-link active" data-toggle="pill" data-target="#tabone"><i class="fa Example of thumb-tack fa-thumb-tack"></i> Step 1</a> </li>
+            <li class="nav-item"> <a disabled="" class="nav-link" href="" data-toggle="pill" data-target="#tabtwo"><i class="fa fa-fighter-jet"></i> Step 2</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree"><i class="fa  fa-hotel"></i> Tab 3</a> </li>
+          </ul>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-content mt-2">
+            <div class="tab-pane fade active show" id="tabone" role="tabpanel">
+              <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+                <div class="container">
+                  <div class="row">
+                    <div class="mx-auto col-md-10 p-4">
+                      <h1 class="text-light">Location Picking</h1>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Location</label>
+                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+              <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+                <div class="container">
+                  <div class="row">
+                    <div class="mx-auto col-md-10 p-4">
+                      <h1 class="text-light">Flight Picking</h1>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label>From</label>
+                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                          <div class="form-group col-md-6">
+                            <label>To</label>
+                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label>Departure Date</label>
+                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                          <div class="form-group col-md-6">
+                            <label>Returnn Date</label>
+                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container tripPlannerFlight">
+                <div class="row flightDiv">
+                  <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/air_canada.png" width="250px" height="250px"></div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3> Air Canada - 2 Ways</h3>
+                    </div>
+                    <div>
+                      <label>From: Toronto</label>
+                    </div>
+                    <div>
+                      <label>To: Vancouver</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Departure: July 21st, 2020 - 07:30PM</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Return: August 21st, 2020 - 09:30PM</label>
+                    </div>
+                    <div>
+                      <label><a href="#">Read Review</a></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4" style="text-align: right;">
+                    <div>
+                      <h3> Price: $650 </h3>
+                    </div>
+                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
+                  </div>
+                </div>
+                <div class="row flightDiv">
+                  <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/westjet.png" width="250px" height="250px"></div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3> Westjet - 2 Ways</h3>
+                    </div>
+                    <div>
+                      <label>From: Toronto</label>
+                    </div>
+                    <div>
+                      <label>To: Vancouver</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Departure: July 21st, 2020 - 07:30PM</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Return: August 21st, 2020 - 09:30PM</label>
+                    </div>
+                    <div>
+                      <label><a href="#">Read Review</a></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4" style="text-align: right;">
+                    <div>
+                      <h3> Price: $635</h3>
+                    </div>
+                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tabthree" role="tabpanel">
+              <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+                <div class="container">
+                  <div class="row">
+                    <div class="mx-auto col-md-10 p-4">
+                      <h1 class="text-light">Hotel Picking</h1>
+                      <form>
+                        <div class="form-group col-md-12">
+                          <label>Location</label>
+                          <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label>From Date</label>
+                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                          <div class="form-group col-md-6">
+                            <label>To Date</label>
+                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label>Price range (Lowest)</label>
+                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                          <div class="form-group col-md-6">
+                            <label>Price range (highest)</label>
+                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container tripPlannerHotel">
+                <div class="row flightDiv">
+                  <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/air_canada.png" width="250px" height="250px"></div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3> Air Canada - 2 Ways</h3>
+                    </div>
+                    <div>
+                      <label>From: Toronto</label>
+                    </div>
+                    <div>
+                      <label>To: Vancouver</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Departure: July 21st, 2020 - 07:30PM</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Return: August 21st, 2020 - 09:30PM</label>
+                    </div>
+                    <div>
+                      <label><a href="#">Read Review</a></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4" style="text-align: right;">
+                    <div>
+                      <h3> Price: $650 </h3>
+                    </div>
+                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
+                  </div>
+                </div>
+                <div class="row flightDiv">
+                  <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/westjet.png" width="250px" height="250px"></div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3> Westjet - 2 Ways</h3>
+                    </div>
+                    <div>
+                      <label>From: Toronto</label>
+                    </div>
+                    <div>
+                      <label>To: Vancouver</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Departure: July 21st, 2020 - 07:30PM</label>
+                    </div>
+                    <div>
+                      <label>Date &amp; Time Return: August 21st, 2020 - 09:30PM</label>
+                    </div>
+                    <div>
+                      <label><a href="#">Read Review</a></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4" style="text-align: right;">
+                    <div>
+                      <h3> Price: $635</h3>
+                    </div>
+                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
