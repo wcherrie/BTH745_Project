@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.tripPlannerLocation{
+    padding-top: 50px;
+}
+.tripPlannerFlight{
+    padding-top: 50px;
+}
+
+.tripPlannerHotel{
+    padding-top:50px;
+}
+
+.hotelDiv{
+    padding-bottom: 40px;
+}
