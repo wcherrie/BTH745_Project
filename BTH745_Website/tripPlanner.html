@@ -93,7 +93,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="mx-auto col-md-10 p-4">
-                      <h1 class="text-light">Location Picking</h1>
+                      <h1 class="text-light">Location Search</h1>
                       <form>
                         <div class="form-row">
                           <div class="form-group col-md-12">
@@ -108,8 +108,8 @@
                   </div>
                 </div>
               </div>
-              <div class="container tripPlannerLocation" id="locationList" hidden="true" style="">
-                <div class="alert alert-success text-white px-5" id="approveNotiLocation" hidden="true" role="alert" style="">
+              <div class="container tripPlannerLocation" id="locationList" hidden="true" >
+                <div class="alert alert-success text-white px-5" id="approveNotiLocation" hidden="true" role="alert">
                   <div class="container">
                     <i class="now-ui-icons ui-2_like lg pull-left mr-3"></i>
                     <strong>WELL DONE!</strong>
@@ -163,22 +163,22 @@
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label>From</label>
-                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                            <input type="text" class="form-control" id="departure" placeholder="departure location"> </div>
                           <div class="form-group col-md-6">
                             <label>To</label>
-                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                            <input type="email" class="form-control" id="destination" placeholder="destination location"> </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label>Departure Date</label>
-                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                            <input type="text" class="form-control form-control-lg" id="departDate" placeholder="05/03/1965"> </div>
                           <div class="form-group col-md-6">
-                            <label>Returnn Date</label>
-                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                            <label>Return Date</label>
+                            <input type="text" class="form-control form-control-lg" id="returnDate" placeholder="05/03/1965"> </div>
                         </div>
                       </form>
                       <a href="#flightList">
-                        <button onclick="showFlight()" class="btn btn-primary">Send</button>
+                        <button onclick="showFlight()" class="btn btn-primary">Search</button>
                       </a>
                     </div>
                   </div>
@@ -264,26 +264,26 @@
                 <div class="container">
                   <div class="row">
                     <div class="mx-auto col-md-10 p-4">
-                      <h1 class="text-light">Hotel Picking</h1>
+                      <h1 class="text-light">Hotel Search</h1>
                       <form>
                         <div class="form-group col-md-12">
                           <label>Location</label>
-                          <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                          <input type="email" class="form-control" id="hotelLocation" placeholder="hotel location"> </div>
                         <div class="form-row">
                           <div class="form-group col-md-6">
-                            <label>From Date</label>
-                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                            <label>Start Date</label>
+                            <input type="text" class="form-control form-control-lg" id="startDate" placeholder="05/03/1965"></div>
                           <div class="form-group col-md-6">
-                            <label>To Date</label>
-                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                            <label>End Date</label>
+                            <input type="text" class="form-control form-control-lg" id="endDate" placeholder="05/03/1965"> </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label>Price range (Lowest)</label>
-                            <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>
+                            <input type="text" class="form-control" id="priceLower" placeholder="100"> </div>
                           <div class="form-group col-md-6">
                             <label>Price range (highest)</label>
-                            <input type="email" class="form-control" id="form23" placeholder="Email*"> </div>
+                            <input type="email" class="form-control" id="priceHigher" placeholder="1000"> </div>
                         </div>
                       </form>
                       <a href="#hotelList">
@@ -366,7 +366,7 @@
                     <tr>
                       <td>Flight</td>
                       <td>1 Adult, Economy, Toronto Pearson Airport to Vancouver International Airport and return, June 20, 2020 - July 20, 2020</td>
-                      <td><a class="btn btn-primary" href="customization.html">Edit</a></td>
+                      <td><a class="btn btn-primary" href="personalization.html">Edit</a></td>
                       <td><a class="btn btn-warning">Delete</a></td>
                     </tr>
                     <tr>
@@ -379,7 +379,7 @@
                 </table>
               </div>
               <div class="container" style="text-align: center">
-                <a class="btn btn-primary" href="cart.html">Checkout</a>
+                <a class="btn btn-primary" href="cart.html">Proceed to Cart</a>
               </div>
             </div>
           </div>
@@ -418,6 +418,29 @@
     function myFunction() {
       document.getElementById("demo").innerHTML = "Hello World";
     }
+    
+    $(document).ready(function() {
+      $('#departDate').datepicker({
+        calendarWeeks: true,
+        autoclose: true,
+        todayHighlight: true
+      });
+      $('#returnDate').datepicker({
+        calendarWeeks: true,
+        autoclose: true,
+        todayHighlight: true
+      });
+      $('#startDate').datepicker({
+        calendarWeeks: true,
+        autoclose: true,
+        todayHighlight: true
+      });
+      $('#endDate').datepicker({
+        calendarWeeks: true,
+        autoclose: true,
+        todayHighlight: true
+      });
+    });
   </script>
 </body>
 
