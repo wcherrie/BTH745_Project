@@ -149,9 +149,19 @@
             <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
           </div>
         </div>
+        <div class="alert alert-success text-white px-5" id="approveNoti" hidden="true" role="alert">
+          <div class="container">
+            <i class="now-ui-icons ui-2_like lg pull-left mr-3"></i>
+            <strong>WELL DONE!</strong>
+            <span> You successfully added this hotel to your cart. </span>
+            <button type="button" class="close text-white" data-dismiss="alert">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+          </div>
+        </div>
         <h2>Hotel List</h2>
         <div class="container tripPlannerHotel" id="hotelList" style="">
-          <div class="row hotelDiv">
+          <div class="row hotelDiv" style="padding-bottom: 50px">
             <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/hotel1.jpg" width="250px" height="250px"></div>
             <div class="col-md-6">
               <div>
@@ -167,12 +177,14 @@
             <div class="col-md-4" style="text-align: right;">
               <div>
                 <h3> Price: $150 / Day </h3>
+                <a href="#approveNoti">
+                  <button class="btn btn-primary" onclick="addTicket()">Add Ticket to Cart</button>
+                </a>
               </div>
-              <div class="addCart"><a class="btn btn-primary" href="cart.html">Add Ticket to Cart</a> </div>
             </div>
           </div>
           <div class="row hotelDiv">
-            <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/hotel2.jpg" width="250px" height="250px"></div>
+            <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/hotel2.jpg" width="250px" height="450px"></div>
             <div class="col-md-6">
               <div>
                 <h3> Albert Hotel</h3>
@@ -187,14 +199,21 @@
             <div class="col-md-4" style="text-align: right;">
               <div>
                 <h3> Price: $200 / Day</h3>
+                <a href="#approveNoti">
+                  <button class="btn btn-primary" onclick="addTicket()">Add Ticket to Cart</button>
+                </a>
               </div>
-              <div class="addCart"><a class="btn btn-primary" href="cart.html">Add Ticket to Cart</a> </div>
             </div>
           </div>
         </div>
       </main>
     </div>
   </div>
+  <script style="">
+    function addTicket() {
+      document.getElementById("approveNoti").hidden = false;
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

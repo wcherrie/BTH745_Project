@@ -72,22 +72,23 @@
   <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
           <ul class="nav nav-tabs">
-            <li class="nav-item text-center"> <a href="" class="nav-link active" data-toggle="pill" data-target="#tabone"><i class="fa Example of thumb-tack fa-thumb-tack"></i> Step 1</a> </li>
-            <li class="nav-item"> <a disabled="" class="nav-link" href="" data-toggle="pill" data-target="#tabtwo"><i class="fa fa-fighter-jet"></i> Step 2</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree"><i class="fa  fa-hotel"></i> Tab 3</a> </li>
+            <li class="nav-item text-center"> <a href="" class="nav-link" data-toggle="pill" data-target="#tabone"><i class="fa Example of thumb-tack fa-thumb-tack"></i> Step 1</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo" disabled=""><i class="fa fa-fighter-jet"></i> Step 2</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="" data-toggle="pill" data-target="#tabthree"><i class="fa  fa-hotel"></i> Tab 3</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link active" data-toggle="pill" data-target="#tabfour"><i class="fa  fa-check-circle-o"></i> Finalize Cart</a> </li>
           </ul>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="tab-content mt-2">
-            <div class="tab-pane fade active show" id="tabone" role="tabpanel">
+            <div class="tab-pane fade" id="tabone" role="tabpanel">
               <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
                 <div class="container">
                   <div class="row">
@@ -108,6 +109,16 @@
                 </div>
               </div>
               <div class="container tripPlannerLocation" id="locationList" hidden="true" style="">
+                <div class="alert alert-success text-white px-5" id="approveNotiLocation" hidden="true" role="alert" style="">
+                  <div class="container">
+                    <i class="now-ui-icons ui-2_like lg pull-left mr-3"></i>
+                    <strong>WELL DONE!</strong>
+                    <span> You successfully added this location to your plan. Please proceed to Step 2. </span>
+                    <button type="button" class="close text-white" data-dismiss="alert">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </div>
+                </div>
                 <div class="row hotelDiv">
                   <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/bcflag.png" width="250px" height="250px"></div>
                   <div class="col-md-6">
@@ -119,7 +130,9 @@
                     </div>
                   </div>
                   <div class="col-md-4" style="text-align: right;">
-                    <div class="addCart"><a class="btn btn-primary" href="#">Add Location</a> </div>
+                    <a href="#approveNotiLocation">
+                      <button class="btn btn-primary" onclick="addLocation()">Add Location</button>
+                    </a>
                   </div>
                 </div>
                 <div class="row hotelDiv">
@@ -133,7 +146,9 @@
                     </div>
                   </div>
                   <div class="col-md-4" style="text-align: right;">
-                    <div class="addCart"><a class="btn btn-primary" href="#">Add Location</a> </div>
+                    <a href="#approveNotiLocation">
+                      <button class="btn btn-primary" onclick="addLocation()">Add Location</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -170,6 +185,16 @@
                 </div>
               </div>
               <div class="container tripPlannerFlight" id="flightList" hidden="true" style="">
+                <div class="alert alert-success text-white px-5" id="approveNotiFlight" hidden="true" role="alert" style="">
+                  <div class="container">
+                    <i class="now-ui-icons ui-2_like lg pull-left mr-3"></i>
+                    <strong>WELL DONE!</strong>
+                    <span> You successfully added this flight ticket to your cart. Please proceed to Step 3.</span>
+                    <button type="button" class="close text-white" data-dismiss="alert">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </div>
+                </div>
                 <div class="row flightDiv">
                   <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/air_canada.png" width="250px" height="250px"></div>
                   <div class="col-md-6">
@@ -195,8 +220,10 @@
                   <div class="col-md-4" style="text-align: right;">
                     <div>
                       <h3> Price: $650 </h3>
+                      <a href="#approveNotiFlight">
+                        <button class="btn btn-primary" onclick="addFlight()">Add Ticket to Cart</button>
+                      </a>
                     </div>
-                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
                   </div>
                 </div>
                 <div class="row flightDiv">
@@ -224,8 +251,10 @@
                   <div class="col-md-4" style="text-align: right;">
                     <div>
                       <h3> Price: $635</h3>
+                      <a href="#approveNotiFlight">
+                        <button class="btn btn-primary" onclick="addFlight()">Add Ticket to Cart</button>
+                      </a>
                     </div>
-                    <div class="addCart"><a class="btn btn-primary" href="#">Add Ticket to Cart</a> </div>
                   </div>
                 </div>
               </div>
@@ -263,7 +292,17 @@
                   </div>
                 </div>
               </div>
-              <div class="container tripPlannerHotel" id="hotelList" hidden="true" style="">
+              <div class="container tripPlannerHotel" id="hotelList" style="" hidden="true">
+                <div class="alert alert-success text-white px-5" id="approveNotiHotel" hidden="true" role="alert" style="">
+                  <div class="container">
+                    <i class="now-ui-icons ui-2_like lg pull-left mr-3"></i>
+                    <strong>WELL DONE!</strong>
+                    <span> You successfully added this hotel to your cart. Please proceed to last Step.</span>
+                    <button type="button" class="close text-white" data-dismiss="alert">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </div>
+                </div>
                 <div class="row hotelDiv">
                   <div class="col-md-2"><img class="img-fluid d-block" src="assets/img/hotel1.jpg" width="250px" height="250px"></div>
                   <div class="col-md-6">
@@ -280,8 +319,10 @@
                   <div class="col-md-4" style="text-align: right;">
                     <div>
                       <h3> Price: $150 / Day </h3>
+                      <a href="#approveNotiHotel">
+                        <button class="btn btn-primary" onclick="addHotel()">Add Hotel room to Cart</button>
+                      </a>
                     </div>
-                    <div class="addCart"><a class="btn btn-primary" href="cart.html">Add Ticket to Cart</a> </div>
                   </div>
                 </div>
                 <div class="row hotelDiv">
@@ -300,10 +341,45 @@
                   <div class="col-md-4" style="text-align: right;">
                     <div>
                       <h3> Price: $200 / Day</h3>
+                      <a href="#approveNotiHotel">
+                        <button class="btn btn-primary" onclick="addHotel()">Add Hotel room to Cart</button>
+                      </a>
                     </div>
-                    <div class="addCart"><a class="btn btn-primary" href="cart.html">Add Ticket to Cart</a> </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="tab-pane fade active show" id="tabfour" role="tabpanel" style="">
+              <div class="container my-4">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Type</th>
+                      <th>Details</th>
+                      <th></th>
+                      <!--edit-->
+                      <th></th>
+                      <!--delete-->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Flight</td>
+                      <td>1 Adult, Economy, Toronto Pearson Airport to Vancouver International Airport and return, June 20, 2020 - July 20, 2020</td>
+                      <td><a class="btn btn-primary" href="customization.html">Edit</a></td>
+                      <td><a class="btn btn-warning">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td style="" draggable="true">Hotel</td>
+                      <td>Address : 1234 Islington Avenue, Vancouver, BC, Canada, Price : $150 / Day</td>
+                      <td><a class="btn btn-primary" href="#">Edit</a></td>
+                      <td><a class="btn btn-warning">Delete</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="container" style="text-align: center">
+                <a class="btn btn-primary" href="cart.html">Checkout</a>
               </div>
             </div>
           </div>
@@ -315,6 +391,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" style=""></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
   <script style="">
+    function addLocation() {
+      document.getElementById("approveNotiLocation").hidden = false;
+    }
+
+    function addFlight() {
+      document.getElementById("approveNotiFlight").hidden = false;
+    }
+
+    function addHotel() {
+      document.getElementById("approveNotiHotel").hidden = false;
+    }
+
     function showFlight() {
       document.getElementById("flightList").hidden = false;
     }
