@@ -18,8 +18,10 @@
 }
 
 ::placeholder {
-  color: red;
-  opacity: 1; /* Firefox */
+  color: black !important;
+  font-family: Montserrat;
+  font-size: 0.85rem;
+  font-weight: 350;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
