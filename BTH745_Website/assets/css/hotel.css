@@ -31,3 +31,8 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: red;
 }
+
+img {
+    width: 300px !important;
+    height: 120px !important;
+}

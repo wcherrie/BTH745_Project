@@ -7418,3 +7418,7 @@ html, body {
 
 .shadow-none {
   box-shadow: none !important; }
+
+.footer {
+    background-color: #F5FFDC;
+}
